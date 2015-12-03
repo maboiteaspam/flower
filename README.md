@@ -36,7 +36,7 @@ streamA.pipe(through2.obj().resume())
   .pipe(through2.obj().resume());
 
 for (var e=...) {
-streamA.write(...);
+    streamA.write(...);
 }
 streamA.resume();
 ```
@@ -55,7 +55,7 @@ streamA
     .pipe(flower());
 
 for (var e=...) {
-streamA.write(...);
+    streamA.write(...);
 }
 ```
 
