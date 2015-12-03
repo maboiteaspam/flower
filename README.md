@@ -27,7 +27,9 @@ I have to call for resume on each and every stream i create.
 ```js
 var streamA = through2.obj(function (req, enc, cb) {
   cb(null, req);
-}).pipe(through2.obj().resume())
+})
+
+streamA.pipe(through2.obj().resume())
   .pipe(hrough2.obj().resume())
   .pipe(hrough2.obj().resume())
   .pipe(hrough2.obj().resume())
@@ -43,7 +45,9 @@ streamA.resume();
 With `flower` i want to ease that...
 
 ```js
-var streamA = flower()
+var streamA = flower();
+
+streamA
     .pipe(flower())
     .pipe(flower())
     .pipe(flower())
