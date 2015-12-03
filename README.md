@@ -30,10 +30,10 @@ var streamA = through2.obj(function (req, enc, cb) {
 })
 
 streamA.pipe(through2.obj().resume())
-  .pipe(hrough2.obj().resume())
-  .pipe(hrough2.obj().resume())
-  .pipe(hrough2.obj().resume())
-  .pipe(hrough2.obj().resume());
+  .pipe(through2.obj().resume())
+  .pipe(through2.obj().resume())
+  .pipe(through2.obj().resume())
+  .pipe(through2.obj().resume());
 
 for (var e=...) {
 streamA.write(...);
