@@ -22,7 +22,7 @@ process.stdin.pipe(flower(fnTransform, fnFlush));
 
 ### My problem with through2
 
-I have to call for resume on each and every stream i create.
+I have to call for `.resume()` on each and every stream i create.
 
 ```js
 var streamA = through2.obj(function (req, enc, cb) {
