@@ -54,3 +54,8 @@ for (var e=...) {
 streamA.write(...);
 }
 ```
+
+# Read more
+
+- https://nodejs.org/api/stream.html#stream_compatibility_with_older_node_js_versions
+
