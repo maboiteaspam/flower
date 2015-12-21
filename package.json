@@ -1,14 +1,26 @@
 {
-  "name": "flower",
+  "name": "@maboiteaspam/flower",
   "version": "1.0.0",
-  "description": "",
+  "description": "a stream object in flow mode",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dcheck": "npm outdated --depth=0",
+    "patch": "npm version patch -m \"patch %s\"",
+    "minor": "npm version minor -m \"minor %s\"",
+    "major": "npm version major -m \"major %s\"",
+    "preversion": "echo \"npm test: undefined\" && npi --explicit",
+    "version": "echo \"npm run build: undefined\"",
+    "postversion": "git push && git push --tags && npm run public",
+    "public": "npm publish --access=public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "stream",
+    "object",
+    "flow"
+  ],
+  "author": "maboiteaspam",
+  "license": "WTF",
   "dependencies": {
     "debug": "^2.2.0",
     "through2": "^2.0.0"

@@ -5,7 +5,7 @@ I always forgot to enable the flow mode of node streams,
 
 # install
 
-    npm i maboiteaspam/flower --save
+    npm i @maboiteaspam/flower --save
 
 # Usage
 
@@ -14,7 +14,7 @@ I always forgot to enable the flow mode of node streams,
 
 ```js
 
-var flower = require('flower')
+var flower = require('@maboiteaspam/flower')
 
 process.stdin.pipe(flower(fnTransform, fnFlush));
 
