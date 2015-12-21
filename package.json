@@ -1,6 +1,6 @@
 {
   "name": "@maboiteaspam/flower",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "a stream object in flow mode",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "author": "maboiteaspam",
   "license": "WTF",
   "dependencies": {
-    "debug": "^2.2.0",
-    "through2": "^2.0.0"
+    "debug": ">=2.2.0 <3.0.0-0",
+    "through2": ">=2.0.0 <3.0.0-0"
   }
 }
